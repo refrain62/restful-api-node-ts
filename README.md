@@ -132,3 +132,20 @@ TypeScriptで Expressを使うためのモジュールをインストールす�
 ```
 $ npm install @types/express --save-dev
 ```
+
+# ひとまずビルド・サーブできることを確認する
+```
+$ mkdir ./src
+$ touch ./src/index.ts
+```
+ビルド・サーブしてみる
+```
+$ npm run build
+$ npm run serve
+```
+結果
+```
+hello
+Example app membersening on port 3000!
+```
+
