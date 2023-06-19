@@ -149,3 +149,18 @@ hello
 Example app membersening on port 3000!
 ```
 
+# オブジェクトを返却する
+オブジェクトとして、メンバーのリストを返却するAPIを作成する
+【仕様】  
+・パスパラメータ無しでアクセスされた場合、全メンバーの情報リストを返却する。  
+・パスパラメータがにメンバーIDを入れた場合、該当するメンバーIDの情報を返却する。  
+
+【結果】
+```
+http://localhost:3000/members
+[{"id":"1","name":"Taro","team":"A"},{"id":"2","name":"Jiro","team":"B"},{"id":"3","name":"Saburo","team":"A"}]
+
+
+http://localhost:3000/members/2
+[{"id":"2","name":"Jiro","team":"B"}]
+```
