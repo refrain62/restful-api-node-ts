@@ -29,4 +29,19 @@ Created a new tsconfig.json  with: TS
 You can learn more at https://aka.ms/tsconfig
 ```
 
+# tsconfig.jsonを編集する
+moduleはES2015に書き換える。
+```
+{
+  "compilerOptions": {
+    "target": "ES2015",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "ES2015",                                /* Specify what module code is generated. */
+    "allowSyntheticDefaultImports": true,             /* Allow 'import x from y' when a module doesn't have a default export. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+}
+```
 
