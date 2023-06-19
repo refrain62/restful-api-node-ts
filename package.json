@@ -1,0 +1,12 @@
+{
+  "name": "restful-api-node-ts",
+  "version": "1.0.0",
+  "description": "https://bunsugi.com/rest-api-node-express-typescript の写経",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
