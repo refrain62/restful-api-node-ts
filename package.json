@@ -4,7 +4,10 @@
   "description": "https://bunsugi.com/rest-api-node-express-typescript の写経",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node index.ts",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "serve": "node dist/main.js"
   },
   "keywords": [],
   "author": "",

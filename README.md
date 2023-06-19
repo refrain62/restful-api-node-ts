@@ -65,3 +65,15 @@ The config that you've selected requires the following dependencies:
 √ Would you like to install them now? · No / Yes ※Noを選択
 Successfully created .eslintrc.json file in C:\develop\github\_restful-api-node-ts\restful-api-node-ts
 ```
+
+# npm run コマンドの設定
+package.jsonにコンパイルコマンドを追加
+```
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "serve": "node dist/main.js"
+  },
+```
+
