@@ -45,3 +45,23 @@ moduleはES2015に書き換える。
 }
 ```
 
+# ESLintの設定
+コードチェック用に ESLintをインストールし、.eslintrc.jsonファイルを生成する
+```
+$ npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+$ npm init @eslint/config
+```
+設定は以下の通り
+```
+√ How would you like to use ESLint? · problems
+√ What type of modules does your project use? · esm ※JavaScript
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes ※Yesを選択
+√ Where does your code run? · browser
+√ What format do you want your config file to be in? · JSON
+The config that you've selected requires the following dependencies:
+
+@typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
+√ Would you like to install them now? · No / Yes ※Noを選択
+Successfully created .eslintrc.json file in C:\develop\github\_restful-api-node-ts\restful-api-node-ts
+```
