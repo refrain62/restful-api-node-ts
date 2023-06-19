@@ -121,3 +121,14 @@ module.exports = {
   },
 };
 ```
+
+# Expressモジュールをインストール
+Node.jsにはHTTPを受け付けるサーバーを立てるための人気モジュールとしてExpressがある。
+
+```
+$ npm install express
+```
+TypeScriptで Expressを使うためのモジュールをインストールする
+```
+$ npm install @types/express --save-dev
+```
