@@ -77,3 +77,12 @@ package.jsonにコンパイルコマンドを追加
   },
 ```
 
+# webpackの設定
+TypeScirptはソースコードのまま実行できないので、JavaScriptにコンパイルする必要がある。  
+TypeScriptからもstcコマンドが用意されているが、今回はwebpackを使って、ソースコードを１つのJavaScriptファイルにまとめてくれるモジュールを利用する。  
+  
+基本的にwebpackはJavaScriptのソースコードをまとめることしかできないが、ローダーと呼ばれる機能を使うとほかの言語にも対応できる。  
+今回は、ts-loaderを利用することでTypeScriptにも対応する。  
+```
+$ npm i -D webpack webpack-cli ts-loader 
+```
